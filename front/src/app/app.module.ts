@@ -18,6 +18,7 @@ import { UsuarioService } from './services/usuario.service';
 import { FooterComponent } from './components/footer/footer.component';
 import { CrearPlayListComponent } from './components/crear-play-list/crear-play-list.component';
 import { MenuNoRegistradosComponent } from './components/menu-no-registrados/menu-no-registrados.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MenuNoRegistradosComponent } from './components/menu-no-registrados/men
     MenuComponent,
     FooterComponent,
     CrearPlayListComponent,
-    MenuNoRegistradosComponent
+    MenuNoRegistradosComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
