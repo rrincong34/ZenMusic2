@@ -15,6 +15,9 @@ import { MenuComponent } from './components/menu/menu.component';
 
 // Importar Servicio Usuario
 import { UsuarioService } from './services/usuario.service';
+import { FooterComponent } from './components/footer/footer.component';
+import { CrearPlayListComponent } from './components/crear-play-list/crear-play-list.component';
+import { MenuNoRegistradosComponent } from './components/menu-no-registrados/menu-no-registrados.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { UsuarioService } from './services/usuario.service';
     RegistroComponent,
     LoginComponent,
     PerfilUsuarioComponent,
-    MenuComponent
+    MenuComponent,
+    FooterComponent,
+    CrearPlayListComponent,
+    MenuNoRegistradosComponent
   ],
   imports: [
     BrowserModule,

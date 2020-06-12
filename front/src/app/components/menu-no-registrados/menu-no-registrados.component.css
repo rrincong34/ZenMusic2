@@ -1,0 +1,26 @@
+#navHorizontal{
+margin-top: -25px;
+width: 100%;
+position: fixed; 
+box-shadow: 3px 3px 10px lightgray;
+}
+
+#tituloNav{
+    color: lightgrey;
+    text-align: left;
+    padding: 10px;
+}
+
+.tituloNavHorizontal{
+    font-weight: bolder;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.tituloNavHorizontal:hover{
+    color: rgb(32, 175, 241);
+    font-size: large;
+}
+
+
