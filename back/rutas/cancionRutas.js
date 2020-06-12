@@ -24,7 +24,7 @@ api.put('/subirImagenCancion/:id', subirImgCancionDirectorio, CancionControl.sub
 api.get('/obtenerImagenCancion/:imageFile', CancionControl.mostrarImgCancion);
 
 // Ruta Subir Archivo Cancion
-api.put('/subirImagenCancion/:id', subirArchivoCancionDirectorio, CancionControl.subirArchivoCancion);
+api.put('/subirArchivoCancion/:id', subirArchivoCancionDirectorio, CancionControl.subirArchivoCancion);
 
 // Ruta mostrar Archivo Cancion
 api.get('/obtenerArchivoCancion/:cancionFile', CancionControl.mostrarArchivoCancion);

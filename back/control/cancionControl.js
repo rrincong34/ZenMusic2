@@ -80,7 +80,9 @@ function subirImgCancion(req, res) {
         console.log(`partir Archivo: ${partirArchivo}`);
 
         // Acceder a la posición que contiene el nombre del archivo
-        var nombreArchivo = partirArchivo[2];
+        var final = partirArchivo.length - 1;
+        console.log(final);
+        var nombreArchivo = partirArchivo[final];
         console.log(`Posición dato: ${nombreArchivo}`);
 
         // Haremos un split para separar el nombre del archivo de la extensión
@@ -94,7 +96,7 @@ function subirImgCancion(req, res) {
 
 
         // Validar si el formato del archivo es aceptable
-        if (extensionArchivo == 'png' || extensionArchivo == 'jpg' || extensionArchivo == 'svg') {
+        if (extensionArchivo == 'jpeg' || extensionArchivo == 'png' || extensionArchivo == 'jpg' || extensionArchivo == 'svg') {
             // Actualizar del cancion el campo imagen
             Cancion.findByIdAndUpdate(cancionId, { imagen: nombreArchivo }, (err, cancionConImg) => {
                 if (err) {
@@ -127,7 +129,7 @@ function mostrarImgCancion(req, res) {
     // localhost:3000/api/obtenerImagen/:imageFile
     var archivo = req.params.imageFile;
     // Ubicación del archivo
-    var ruta = './archivos/canciones/imagenes' + archivo;
+    var ruta = './archivos/canciones/imagenes/' + archivo;
 
     // Validar si existe o no
     // fs.exists('la ruta del archivo a buscar', (existencia)=>{})
@@ -152,7 +154,10 @@ function subirArchivoCancion(req, res) {
         var partirArchivo = rutaArchivo.split('\\');
         console.log(`partir Archivo: ${partirArchivo}`);
 
-        var nombreArchivo = partirArchivo[2];
+        // var nombreArchivo = partirArchivo[2];
+        var final = partirArchivo.length - 1;
+        console.log(final);
+        var nombreArchivo = partirArchivo[final];
         console.log(`Posición dato: ${nombreArchivo}`);
 
         var extensionImg = nombreArchivo.split('\.');
@@ -163,7 +168,7 @@ function subirArchivoCancion(req, res) {
 
         if (extensionArchivo == 'mp3' || extensionArchivo == 'flac' || extensionArchivo == 'wav') {
             // Actualizar del usuario el campo imagen
-            Cancion.findByIdAndUpdate(cancionId, { archivo: nombreArchivo }, (err, cancionConArchivo) => {
+            Cancion.findByIdAndUpdate(cancionId, { cancion: nombreArchivo }, (err, cancionConArchivo) => {
                 if (err) {
                     res.status(500).send({ message: "Error en el servidor" });
                 } else {
@@ -191,7 +196,7 @@ function subirArchivoCancion(req, res) {
 function mostrarArchivoCancion(req, res) {
     var archivo = req.params.cancionFile;
     // Ubicación del archivo
-    var ruta = './archivos/canciones/musica' + archivo;
+    var ruta = './archivos/canciones/musica/' + archivo;
 
     // Validar si existe o no
     // fs.exists('la ruta del archivo a buscar', (existencia)=>{})

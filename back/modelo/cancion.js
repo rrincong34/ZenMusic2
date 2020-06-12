@@ -13,6 +13,7 @@ var CancionSchema = new Schema({
     genero: String,
     artista: String,
     anio: Number,
+    archivo: String,
     imagen: String
 });
 
