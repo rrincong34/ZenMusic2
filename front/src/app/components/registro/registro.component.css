@@ -1,6 +1,16 @@
 /* Estilos para el formulario de registro */
 
 
+@media (max-width:480px) {
+body {
+  padding: 0 4rem;
+}
+
+}
+
+
+
+
 *, *:before, *:after{
   margin: 0;
   padding: 0;
