@@ -1,0 +1,66 @@
+#logoZen {
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 43%;
+  }
+  
+
+.container{
+    text-align: center;
+}
+
+.botonAnimado {
+    margin-top: 4rem;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 8rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 3px solid gray;
+    color: black;
+    background-color: lightgray;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.3s ease-in;
+}
+
+.botonAnimado:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.botonAnimado:before {
+    content: "";
+    position: absolute;
+    background-color: #1f53c5;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    top: 0;
+    z-index: -1;
+    transition: 0.3s ease-in;
+}
+
+.botonAnimado:hover::before {
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ANGIEEEEE */
+#contenedor_iconosHome{
+    margin-top: 20%;
+}

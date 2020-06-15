@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background: #599fd9;
+    background: linear-gradient(to right, #599fd9, #400246);
+    min-height: 100vh;
+    overflow-x: hidden;  /* Para que el navegador no muestre lo que esta por fuera del margen */
+} 

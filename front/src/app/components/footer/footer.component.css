@@ -14,102 +14,10 @@ footer {
  
 }
 
-.container-body {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.columna1 {
-    max-width: 350px;
-    margin-left: 10px;
-}
-
-.columna1 h1 {
-    font-size: 30px;
-}
-
-.columna1 img {
-    margin-top: 5px;
-    width: 370px;
-    height: 250px;
-    
-}
-
-.columna2 {
-    max-width: 400px;
-}
-
-.columna2 h1 {
-    font-size: 30px;
-}
-
-.columna2 {
-    font-size: 20px
-}
-
-.row {
-    margin-top: 10px;
-    display: flex;
-}
-
 .row img {
-    width: 45px;
-    height: 45px;
-}
-
-.row label {
-    margin-top: 10px;
-    margin-left: 20px;
-    color:rgb(147, 218, 240);
-    
-}
-
-.divcolumna3 {
-    max-width: 450px;
-    margin-left: 6px;
-}
-
-.columna3 h1 {
-    font-size: 30px;
-}
-
-.columna3 img {
-    width: 45px;
-    height: 45px;  
-}
-
-.row2 {
-    margin-top: 20px;
-    display: flex;
-    width: 36px;
-    height: 36px;
-
+    width: 80px;
+    height: 80px;
 }
 
 
-.row2 label {
-    margin-left: 20px;
-    max-width: 150px;
-    margin-top: 10px;
-    color: rgb(147, 218, 240);
-    font-size: 15px
-}
 
-#logo_footer{
-    width: 50%;
-    margin-top: 0px;
-}
-
-.btn-superman {
-    display:block;
-    position: fixed;  
-    bottom:320px;
-    z-index:999;   
-    margin-left: 85%;
-}
-
-#superm{
-    width: 150px;
-    height: 170px;
-}
