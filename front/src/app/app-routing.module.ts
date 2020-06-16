@@ -9,7 +9,7 @@ import { LoginComponent } from './components/login/login.component';
 import { PerfilUsuarioComponent } from './components/perfil-usuario/perfil-usuario.component';
 import { CrearPlayListComponent } from './components/crear-play-list/crear-play-list.component';
 import { MenuNoRegistradosComponent } from './components/menu-no-registrados/menu-no-registrados.component';
-
+import { MenuComponent } from './components/menu/menu.component';
 
 
 // Relacionar rutas con componentes
@@ -19,7 +19,9 @@ const routes: Routes = [
     {path: 'perfil', component: PerfilUsuarioComponent},
     {path: 'crear-play-list', component: CrearPlayListComponent},
     {path: 'menu-no-registrados', component: MenuNoRegistradosComponent},
+    {path: 'menu', component: MenuComponent},
     {path: '', component: HomeComponent}
+
 
     
 
