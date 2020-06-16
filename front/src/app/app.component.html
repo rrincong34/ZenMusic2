@@ -1,2 +1,11 @@
-<app-menu></app-menu>
+<!-- <app-menu></app-menu>  
 <router-outlet></router-outlet>
+<app-footer></app-footer> -->
+
+
+<div *ngIf="home == '' || home == undefined " >   
+    <!-- <app-home></app-home>    -->
+    <!-- <app-registro></app-registro>   -->
+   <router-outlet></router-outlet>     
+
+</div> 
