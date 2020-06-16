@@ -20,10 +20,7 @@ const routes: Routes = [
     {path: 'crear-play-list', component: CrearPlayListComponent},
     {path: 'menu-no-registrados', component: MenuNoRegistradosComponent},
     {path: 'menu', component: MenuComponent},
-    {path: '', component: HomeComponent}
-
-
-    
+    {path: '', component: HomeComponent}    
 
 ];
 

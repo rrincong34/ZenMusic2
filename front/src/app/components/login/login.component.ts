@@ -26,10 +26,6 @@ export class LoginComponent implements OnInit {
   imagen5 = [ 'assets/img/logo.png'] ;
   imagen6 = [ 'assets/img/social/bg.jpg'] ;
 
-
-
-
-
   // Declarar la variable login de tipo Usuario
   public login : Usuario;
   // Declarar la variable identidad
@@ -78,9 +74,8 @@ export class LoginComponent implements OnInit {
 
 
 
-
           // Redireccion al perfil
-          this._router.navigate(['/perfil']);
+          this._router.navigate(['/menu']);
         }else{
           // alert('Usuario no identificado');
 
