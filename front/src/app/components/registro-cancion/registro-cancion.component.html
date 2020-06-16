@@ -1,0 +1,67 @@
+<div> 
+    <form #registrarCancionForm="ngForm" (ngSubmit)="agregarCancion()" >
+
+        <img id="imgCancion" src="CancionRegistrada.imagen"  style="height: 100px; border-radius: 40px; margin: auto;
+display: block; " />  
+        <input type="text" id="nombre" placeholder="Nombre" name="nombreCancion"
+        #nombreCancion="ngModel" [(ngModel)]="CancionRegistrada.nombreCancion" />
+    <br>
+    <input type="text" id="album" placeholder="Album" name="albumCancion"
+     #albumCancion="ngModel" [(ngModel)]="CancionRegistrada.albumCancion" />
+     <br>
+     <input type="text" id="emocion" placeholder="Emocion" name="emocionCancion"
+      #emocionCancion="ngModel" [(ngModel)="CancionRegistrada.emocionCancion" />
+      <br>
+      <input type="text" id="genero" placeholder="Genero" name="generoCancion" 
+      #generoCancion="ngModel" [(ngModel)]="CancionRegistrada.generoCancion" />
+      <br>
+      <input type="text" id="artista" placeholder="Artista" name="artistaCancion" 
+      #artistaCancion="ngModel" [(ngModel)]="CancionRegistrada.artistaCancion" />
+      <br>
+      <input type="number" id="anio" placeholder="Año" name="anioCancion"
+      #anioCancion="ngModel" [(ngModel)]="CancionRegistrada.anioCancion"  />
+      <br>
+      <input   class="sub"   type="file" placeholder="Subir Cancion" (change)="subirArchivo($event)" />
+      <br>
+      <input   class="sub"   type="file" placeholder="Subir Imagen" (change)="subirArchivoImg($event)" />
+      <br>
+      <button  class="submit"  type="submit" >Subir Cancion</button>
+
+    </form>
+</div>
+
+<!--Contenerdor de canciones Encontradas-->
+<div *ngFor="let cancion of cancionesEncontradas">
+
+    <form #actualizarCancionesForm="ngForm">
+
+        <img id="imgCancion" src="{{ url + 'obtenerImagen/' + identidad.imagen }}"  style="height: 100px; border-radius: 40px; margin: auto;
+        display: block; " />  
+                <input type="text" id="nombre" placeholder="Nombre" name="nombreCancion"
+                #nombreCancion="ngModel" [(ngModel)]="cancion.nombreCancion" />
+            <br>
+            <input type="text" id="album" placeholder="Album" name="albumCancion"
+             #albumCancion="ngModel" [(ngModel)]="cancion.albumCancion" />
+             <br>
+             <input type="text" id="emocion" placeholder="Emocion" name="emocionCancion"
+              #emocionCancion="ngModel" [(ngModel)="cancion.emocionCancion" />
+              <br>
+              <input type="text" id="genero" placeholder="Genero" name="generoCancion" 
+              #generoCancion="ngModel" [(ngModel)]="cancion.generoCancion" />
+              <br>
+              <input type="text" id="artista" placeholder="Artista" name="artistaCancion" 
+              #artistaCancion="ngModel" [(ngModel)]="cancion.artistaCancion" />
+              <br>
+              <input type="number" id="anio" placeholder="Año" name="anioCancion"
+              #anioCancion="ngModel" [(ngModel)]="cancion.anioCancion"  />
+              <br>
+              <input   class="sub"   type="file" placeholder="Subir Cancion" (change)="subirArchivo($event)" />
+              <br>
+              <input   class="sub"   type="file" placeholder="Subir Imagen" (change)="subirArchivo($event)" />
+              <br>
+              <button (click)="editarCancion(cancion)">Editar Cancion</button>
+              <br>
+              <button (click)="eliminarCancion(cancion._id)">Eliminar</button>
+
+    </form>
+</div>
