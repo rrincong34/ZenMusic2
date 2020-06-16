@@ -8,7 +8,7 @@ import {map} from 'rxjs/operators';
 import {Observable} from 'rxjs';
 
 @Injectable()
-export class CancionesService{
+export class CancionService{
 
     //Creamos la variable que contiene la ruta de la api que vamos a consumir
     url = 'http://localhost:3000/api/';

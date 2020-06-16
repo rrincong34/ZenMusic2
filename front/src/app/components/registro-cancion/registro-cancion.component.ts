@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { Canciones } from '../../modelo/cancion';
 
 //importar el servicio
-import { CancionesService } from '../../services/cancion.service'; 
+import { CancionService } from '../../services/cancion.service'; 
 
 
 
@@ -22,17 +22,17 @@ export class RegistroCancionComponent implements OnInit {
   public CancionesEncontradas : any=[];
 
   // Declarar la variable archivoSubir de tipo File
-  public subirArchivo : File;
+  public archivoSubir : File;
 
   // Declarar la variable archivoSubir de tipo File
-  public subirArchivoImg : File;
+  public archivoSubirImg: File;
 
 
   // Declarar la variable url
   public url : String;
 
 
-  constructor(private cancionService: CancionesService ) {
+  constructor(private cancionService: CancionService ) {
     this.url = cancionService.url;
    }
 
@@ -42,7 +42,7 @@ export class RegistroCancionComponent implements OnInit {
   // Consumo servicio con el metodo agregarCancion()
    // Método subirArchivo
    subirArchivo(fileInput : any){
-    this.subirArchivo = <File>fileInput.target.files[0];
+    this.archivoSubir = <File>fileInput.target.files[0];
   }
 
   agregarCancion(){
@@ -129,7 +129,7 @@ mostrarCanciones(){
     );
   }
 
-  subirArchivo(idcancion){
+ /*  subirArchivo(idcancion){
     this.cancionService.SubirArchivo(idcancion).subscribe(
       (response: any)=>{
         if(response.cancion){
@@ -146,7 +146,7 @@ mostrarCanciones(){
         }
       }
     );
-  }
+  } */
 
   subirArchivoImg(idcancion){
     this.cancionService.SubirArchivoImg(idcancion).subscribe(
