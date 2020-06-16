@@ -19,6 +19,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CrearPlayListComponent } from './components/crear-play-list/crear-play-list.component';
 import { MenuNoRegistradosComponent } from './components/menu-no-registrados/menu-no-registrados.component';
 import { HomeComponent } from './components/home/home.component';
+import { VistaReproduccionComponent } from './components/vista-reproduccion/vista-reproduccion.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HomeComponent } from './components/home/home.component';
     FooterComponent,
     CrearPlayListComponent,
     MenuNoRegistradosComponent,
-    HomeComponent
+    HomeComponent,
+    VistaReproduccionComponent
   ],
   imports: [
     BrowserModule,
