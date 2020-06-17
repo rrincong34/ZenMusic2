@@ -10,11 +10,8 @@ li{
     background-color: lightgray;
 }
 
-.card-img-top:hover{
-    width: 300px;
-}
 
 #cardCanciones:hover{
-   
    font-weight: bold;
 }
+

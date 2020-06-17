@@ -1,52 +1,253 @@
 <div class="row" >
-<div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
-    <img src="../../../assets/ImgCanciones/Caballito_de_raquira-niyireth.jpg" class="card-img-top" alt="...">
+<div class="col-4" class="card" id="cardCanciones"  style="width: 18rem;">
+  <div *ngFor="let img of aguabajo_img">
+    <img id="img" width="300" [src] = "img" class="card-img-top"  />
+</div>
     <div class="card-body">
-      <h5 class="card-title">TU BOCA</h5>
+      <h5 class="card-title"> {{ cancion.aguabajo_Nombre }} </h5>
     </div>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item">Album: </li>
-        <li class="list-group-item">Emocion: </li>
-        <li class="list-group-item">Genero: </li>
-      <li class="list-group-item">Artista:</li>
-      <li class="list-group-item">Año:</li>
+        <li class="list-group-item">Album: {{ album.aguabajo_album }}</li>
+        <li class="list-group-item">Emocion: {{ emocion.emocion2 }}</li>
+        <li class="list-group-item">Genero: {{ genero.genero2 }}</li>
+      <li class="list-group-item">Artista: {{ artista.aguabajo_artista }}</li>
+      <li class="list-group-item">Año: {{ anio.anio2014 }}</li>
     </ul>
   </div>
 
   <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
-    <img src="../../../assets/img/logo-solo.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">TU BOCA</h5>
-    </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Album: </li>
-        <li class="list-group-item">Emocion: </li>
-        <li class="list-group-item">Genero: </li>
-      <li class="list-group-item">Artista:</li>
-      <li class="list-group-item">Año:</li>
-    </ul>
+    <div *ngFor="let img of alOido_img">
+      <img id="img" width="300" [src] = "img" class="card-img-top"  />
   </div>
+      <div class="card-body">
+        <h5 class="card-title"> {{ cancion.alOido_Nombre }} </h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Album: {{ album.alOido_album }}</li>
+        <li class="list-group-item">Emocion: {{ emocion.emocion3 }}</li>
+        <li class="list-group-item">Genero: {{ genero.genero2 }}</li>
+      <li class="list-group-item">Artista: {{ artista.alOido_artista }}</li>
+      <li class="list-group-item">Año: {{ anio.anio2019 }}</li>
+      </ul>
+    </div>
 
-  <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
-    <img src="../../../assets/img/logo-solo.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">TU BOCA</h5>
+    <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+      <div *ngFor="let img of anzar_img">
+        <img id="img" width="300" [src] = "img" class="card-img-top"  />
     </div>
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">Album: </li>
-        <li class="list-group-item">Emocion: </li>
-        <li class="list-group-item">Genero: </li>
-      <li class="list-group-item">Artista:</li>
-      <li class="list-group-item">Año:</li>
-    </ul>
-  </div>
+        <div class="card-body">
+          <h5 class="card-title"> {{ cancion.anzar_Nombre }} </h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Album: {{ album.anzar_album }}</li>
+          <li class="list-group-item">Emocion: {{ emocion.emocion1 }}</li>
+          <li class="list-group-item">Genero: {{ genero.genero4 }}</li>
+        <li class="list-group-item">Artista: {{ artista.anzar_artista }}</li>
+        <li class="list-group-item">Año: {{ anio.anio2013 }}</li>
+        </ul>
+      </div>
 </div>
   
 
+<!-- ------------------------ segunda linea de canciones  -------------------------->
+
+<div class="row" >
+  <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+    <div *ngFor="let img of bajoTierra_img">
+      <img id="img" width="300" [src] = "img" class="card-img-top"  />
+  </div>
+      <div class="card-body">
+        <h5 class="card-title"> {{ cancion.bajoTierra_Nombre }} </h5>
+      </div>
+      <ul class="list-group list-group-flush">
+          <li class="list-group-item">Album: {{ album.bajoTierra_album }}</li>
+          <li class="list-group-item">Emocion: {{ emocion.emocion3 }}</li>
+          <li class="list-group-item">Genero: {{ genero.genero1 }}</li>
+        <li class="list-group-item">Artista: {{ artista.bajoTierra_artista }}</li>
+        <li class="list-group-item">Año: {{ anio.anio1996 }}</li>
+      </ul>
+    </div>
+  
+    <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+      <div *ngFor="let img of caballito_img">
+        <img id="img" width="300" [src] = "img" class="card-img-top"  />
+    </div>
+        <div class="card-body">
+          <h5 class="card-title"> {{ cancion.caballito_Nombre }} </h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Album: {{ album.caballito_album }}</li>
+          <li class="list-group-item">Emocion: {{ emocion.emocion2 }}</li>
+          <li class="list-group-item">Genero: {{ genero.genero6 }}</li>
+        <li class="list-group-item">Artista: {{ artista.caballito_artista }}</li>
+        <li class="list-group-item">Año: {{ anio.anio2016 }}</li>
+        </ul>
+      </div>
+  
+      <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+        <div *ngFor="let img of cancionAgradecimiento_img">
+          <img id="img" width="300" [src] = "img" class="card-img-top"  />
+      </div>
+          <div class="card-body">
+            <h5 class="card-title"> {{ cancion.cancionAgradecimiento_Nombre }} </h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Album: {{ album.cancionAgradecimiento_album }}</li>
+            <li class="list-group-item">Emocion: {{ emocion.emocion5 }}</li>
+            <li class="list-group-item">Genero: {{ genero.genero7 }}</li>
+          <li class="list-group-item">Artista: {{ artista.cancionAgradecimiento_artista }}</li>
+          <li class="list-group-item">Año: {{ anio.anio2014 }}</li>
+          </ul>
+        </div>
+  </div>
+
+  <!-- ------------------------ tercera linea de canciones  -------------------------->
+
+<div class="row" >
+  <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+    <div *ngFor="let img of dejateLlevar_img">
+      <img id="img" width="300" [src] = "img" class="card-img-top"  />
+  </div>
+      <div class="card-body">
+        <h5 class="card-title"> {{ cancion.dejateLlevar_Nombre }} </h5>
+      </div>
+      <ul class="list-group list-group-flush">
+          <li class="list-group-item">Album: {{ album.dejateLlevar_album }}</li>
+          <li class="list-group-item">Emocion: {{ emocion.emocion2 }}</li>
+          <li class="list-group-item">Genero: {{ genero.genero3 }}</li>
+        <li class="list-group-item">Artista: {{ artista.dejateLlevar_artista }}</li>
+        <li class="list-group-item">Año: {{ anio.anio1997 }}</li>
+      </ul>
+    </div>
+  
+    <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+      <div *ngFor="let img of feliz_img">
+        <img id="img" width="300" [src] = "img" class="card-img-top"  />
+    </div>
+        <div class="card-body">
+          <h5 class="card-title"> {{ cancion.feliz_Nombre }} </h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Album: {{ album.feliz_album }}</li>
+          <li class="list-group-item">Emocion: {{ emocion.emocion2 }}</li>
+          <li class="list-group-item">Genero: {{ genero.genero3 }}</li>
+        <li class="list-group-item">Artista: {{ artista.feliz_artista }}</li>
+        <li class="list-group-item">Año: {{ anio.anio1997 }}</li>
+        </ul>
+      </div>
+  
+      <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+        <div *ngFor="let img of paQueTrabajar_img">
+          <img id="img" width="300" [src] = "img" class="card-img-top"  />
+      </div>
+          <div class="card-body">
+            <h5 class="card-title"> {{ cancion.paQueTrabajar_Nombre }} </h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Album: {{ album.paQueTrabajar_album }}</li>
+            <li class="list-group-item">Emocion: {{ emocion.emocion2 }}</li>
+            <li class="list-group-item">Genero: {{ genero.genero5 }}</li>
+          <li class="list-group-item">Artista: {{ artista.paQueTrabajar_artista }}</li>
+          <li class="list-group-item">Año: {{ anio.anio2016 }}</li>
+          </ul>
+        </div>
+  </div>
 
 
+   <!-- ------------------------ cuarta linea de canciones  -------------------------->
 
-<h2 class="car">{{ cancion.aguabajo_Nombre }}  </h2> 
-<div *ngFor="let img of aguabajo_img">
-    <img id="img" width="300" [src] = "img" />
-</div>
+<div class="row" >
+  <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+    <div *ngFor="let img of chocolate_img">
+      <img id="img" width="300" [src] = "img" class="card-img-top"  />
+  </div>
+      <div class="card-body">
+        <h5 class="card-title"> {{ cancion.chocolate_Nombre }} </h5>
+      </div>
+      <ul class="list-group list-group-flush">
+          <li class="list-group-item">Album: {{ album.chocolate_album }}</li>
+          <li class="list-group-item">Emocion: {{ emocion.emocion5 }}</li>
+          <li class="list-group-item">Genero: {{ genero.genero5 }}</li>
+        <li class="list-group-item">Artista: {{ artista.chocolate_artista }}</li>
+        <li class="list-group-item">Año: {{ anio.anio2011 }}</li>
+      </ul>
+    </div>
+  
+    <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+      <div *ngFor="let img of remanso_img">
+        <img id="img" width="300" [src] = "img" class="card-img-top"  />
+    </div>
+        <div class="card-body">
+          <h5 class="card-title"> {{ cancion.remanso_Nombre }} </h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Album: {{ album.remanso_album }}</li>
+          <li class="list-group-item">Emocion: {{ emocion.emocion3 }}</li>
+          <li class="list-group-item">Genero: {{ genero.genero1 }}</li>
+        <li class="list-group-item">Artista: {{ artista.remanso_artista }}</li>
+        <li class="list-group-item">Año: {{ anio.anio2015 }}</li>
+        </ul>
+      </div>
+  
+      <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+        <div *ngFor="let img of solo_img">
+          <img id="img" width="300" [src] = "img" class="card-img-top"  />
+      </div>
+          <div class="card-body">
+            <h5 class="card-title"> {{ cancion.solo_Nombre }} </h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Album: {{ album.solo_album }}</li>
+            <li class="list-group-item">Emocion: {{ emocion.emocion1 }}</li>
+            <li class="list-group-item">Genero: {{ genero.genero8 }}</li>
+          <li class="list-group-item">Artista: {{ artista.solo_artista }}</li>
+          <li class="list-group-item">Año: {{ anio.anio1993 }}</li>
+          </ul>
+        </div>
+  </div>
+
+   <!-- ------------------------ quinta linea de canciones  -------------------------->
+
+<div class="row" >
+  <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+    <div *ngFor="let img of tuBoca_img">
+      <img id="img" width="300" [src] = "img" class="card-img-top"  />
+  </div>
+      <div class="card-body">
+        <h5 class="card-title"> {{ cancion.tuBoca_Nombre }} </h5>
+      </div>
+      <ul class="list-group list-group-flush">
+          <li class="list-group-item">Album: {{ album.tuBoca_album }}</li>
+          <li class="list-group-item">Emocion: {{ emocion.emocion4 }}</li>
+          <li class="list-group-item">Genero: {{ genero.genero5 }}</li>
+        <li class="list-group-item">Artista: {{ artista.tuBoca_artista }}</li>
+        <li class="list-group-item">Año: {{ anio.anio2002 }}</li>
+      </ul>
+    </div>
+  
+    <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+      <div *ngFor="let img of teInvito_img">
+        <img id="img" width="300" [src] = "img" class="card-img-top"  />
+    </div>
+        <div class="card-body">
+          <h5 class="card-title"> {{ cancion.teInvito_Nombre }} </h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Album: {{ album.teInvito_album }}</li>
+          <li class="list-group-item">Emocion: {{ emocion.emocion2 }}</li>
+          <li class="list-group-item">Genero: {{ genero.genero9 }}</li>
+        <li class="list-group-item">Artista: {{ artista.teInvito_artista }}</li>
+        <li class="list-group-item">Año: {{ anio.anio2011 }}</li>
+        </ul>
+      </div>
+  </div>
+    
+    
+    
+  
+  
+  
+  
+  
+
+
