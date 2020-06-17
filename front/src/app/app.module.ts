@@ -20,6 +20,9 @@ import { CrearPlayListComponent } from './components/crear-play-list/crear-play-
 import { MenuNoRegistradosComponent } from './components/menu-no-registrados/menu-no-registrados.component';
 import { HomeComponent } from './components/home/home.component';
 import { VistaReproduccionComponent } from './components/vista-reproduccion/vista-reproduccion.component';
+import { CancionesTodasComponent } from './componets/canciones-todas/canciones-todas.component';
+import { CancionComponent } from './componets/cancion/cancion.component';
+import { CancionTodasComponent } from './components/cancion-todas/cancion-todas.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { VistaReproduccionComponent } from './components/vista-reproduccion/vist
     CrearPlayListComponent,
     MenuNoRegistradosComponent,
     HomeComponent,
-    VistaReproduccionComponent
+    VistaReproduccionComponent,
+    CancionesTodasComponent,
+    CancionComponent,
+    CancionTodasComponent
   ],
   imports: [
     BrowserModule,

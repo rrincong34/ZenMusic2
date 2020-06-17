@@ -10,6 +10,10 @@ import { PerfilUsuarioComponent } from './components/perfil-usuario/perfil-usuar
 import { CrearPlayListComponent } from './components/crear-play-list/crear-play-list.component';
 import { MenuNoRegistradosComponent } from './components/menu-no-registrados/menu-no-registrados.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { RegistroCancionComponent } from './components/registro-cancion/registro-cancion.component';
+import { CancionTodasComponent } from './components/cancion-todas/cancion-todas.component';
+import { CancionComponent } from './components/cancion/cancion.component';
+
 
 
 // Relacionar rutas con componentes
@@ -20,7 +24,11 @@ const routes: Routes = [
     {path: 'crear-play-list', component: CrearPlayListComponent},
     {path: 'menu-no-registrados', component: MenuNoRegistradosComponent},
     {path: 'menu', component: MenuComponent},
-    {path: '', component: HomeComponent}
+    {path: 'registro-cancion', component: RegistroCancionComponent },
+    {path: '', component: HomeComponent},
+    {path: 'cancion-todas', component: CancionTodasComponent},
+    {path: 'cancion', component: CancionComponent}
+
 
 
     

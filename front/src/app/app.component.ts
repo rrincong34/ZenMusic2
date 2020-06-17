@@ -9,10 +9,10 @@ import Swal from 'sweetalert2'
 
 export class AppComponent implements OnInit {
   constructor(){}
-  public home;
+  public pagina;
   
   ngOnInit(): void{
-    this.home = localStorage.getItem('home');
+    this.pagina = localStorage.getItem('pagina');
   }
     title = 'font';  
   }

@@ -1,14 +1,22 @@
+
+
+
+
+
+  .text-gray {
+    color: #aaa;
+  }
+
+
 #navHorizontal{
-margin-top: -25px;
 width: 100%;
-position: fixed; 
+position: fixed;
 box-shadow: 3px 3px 10px lightgray;
 }
 
 #tituloNav{
     color: lightgrey;
-    text-align: left;
-    padding: 10px;
+    text-align: center;
 }
 
 .tituloNavHorizontal{
@@ -19,8 +27,45 @@ box-shadow: 3px 3px 10px lightgray;
 }
 
 .tituloNavHorizontal:hover{
-    color: rgb(32, 175, 241);
+    color: rgb(45, 175, 230);
     font-size: large;
 }
+
+.vertical-nav {
+    min-width: 17rem;
+    width: 17rem;
+    height: 300vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* box-shadow: 3px 3px 10px lightgray; */
+    transition: all 0.4s;
+    }
+
+hr{
+    color: gray !important;
+    border: 1px solid;
+}
+
+  .nav-link{
+      color: white !important;
+      font-weight: bold;
+  }
+
+  .nav-link:hover{
+      color: lightgray !important;
+      font-size: large;
+  }
+
+  .fotoUsuario{
+      text-align: center;
+      color: gray;
+  }
+
+  #foto{
+      margin-left: 80px;
+  }
+
+
 
 

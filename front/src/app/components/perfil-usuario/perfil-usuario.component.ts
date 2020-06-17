@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Usuario } from '../../modelo/usuario';
 import { UsuarioService } from '../../services/usuario.service';
 import Swal from 'sweetalert2';
+// Importar el manejador de rutas
+import { Router, ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-perfil-usuario',
@@ -23,7 +25,8 @@ export class PerfilUsuarioComponent implements OnInit {
   public url : String;
 
   constructor(
-    private usuarioService : UsuarioService
+    private usuarioService : UsuarioService,
+    private _router : Router  //ruta para el menu
   ) { 
     this.url = usuarioService.url;
   }
@@ -96,6 +99,9 @@ export class PerfilUsuarioComponent implements OnInit {
           }
           // Cierre Validación
 
+           // Redireccion al perfil
+           this._router.navigate(['/menu']);
+
         }else {
          
           Swal.fire({           
@@ -106,13 +112,13 @@ export class PerfilUsuarioComponent implements OnInit {
 
 
 
-        }
+        } 
 
         // Cierre response
       }, error =>{
         if(error != null){
           console.log(error);
-        }
+        } 
       }
     );
   }
