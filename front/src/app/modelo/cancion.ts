@@ -1,4 +1,4 @@
-export class Canciones {
+export class Cancion {
     constructor(
         public _id: String,
         public nombreCancion: String,

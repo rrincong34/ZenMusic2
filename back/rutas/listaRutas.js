@@ -13,5 +13,8 @@ api.put('/guardarCancionEnLista/:idLista', ListaControl.guardarCancionEnLista);
 
 api.get('/mostrarListaCanciones/:idLista', ListaControl.mostrarListaCanciones);
 
+api.get('/mostrarListasUsuario/:idUsuario', ListaControl.mostrarListasUsuario);
+
+
 // Exportar el módulo
 module.exports = api;

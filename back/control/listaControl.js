@@ -106,12 +106,31 @@ Lista.findOne({_id: idLista}).populate('canciones').exec(function(err, listaCanc
             }
         }
     });
+}
+
+function mostrarListasUsuario(req,res){
+    var idUsuario = req.params.idUsuario;
 
 
+    Lista.find({usuario: idUsuario}).populate('canciones').exec(function(err, listasUsuario){
+        if (err) {
+            res.status(500).send({ message: "Error en el servidor" });
+        } else {
+            if (!listasUsuario) {
+                res.status(200).send({ message: "No es posible acceder a la listas del usuario" });
+            } else {
+                res.status(200).send({
+                message: "Listas disponibles",
+                lista: listasUsuario
+               });
+                }
+            }
+        });
 }
 
 module.exports = {
     registrarLista,
     guardarCancionEnLista,
-    mostrarListaCanciones
+    mostrarListaCanciones,
+    mostrarListasUsuario
 }
