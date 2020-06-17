@@ -108,6 +108,9 @@ transition: top ease 3s;
     font-family: 'Nunito', sans-serif;
     background: -webkit-linear-gradient(left, #7579ff, #b224ef);
   }
+
+
+
   
   .submit:hover{
     background: -webkit-linear-gradient(left, #b224ef, #7579ff);

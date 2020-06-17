@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 //importar el modelo
-import { Canciones } from '../../modelo/cancion';
+import { Cancion } from '../../modelo/cancion';
 
 //importar el servicio
 import { CancionService } from '../../services/cancion.service'; 
@@ -16,7 +16,7 @@ import { CancionService } from '../../services/cancion.service';
 export class RegistroCancionComponent implements OnInit {
 
   //declarar variable de tipo modelo
-  public CancionRegistrada: Canciones;
+  public CancionRegistrada: Cancion;
 
   //declarar una variable de tipo de arreglo
   public CancionesEncontradas : any=[];
@@ -54,7 +54,7 @@ export class RegistroCancionComponent implements OnInit {
        
       }else{
         alert(`Asignacion de tarea exitosa!!, ${this.CancionRegistrada.nombreCancion} tienen una nueva tarea`);
-        this.CancionRegistrada = new Canciones("","","","","","",1992,null,null);
+        this.CancionRegistrada = new Cancion("","","","","","",1992,null,null);
       this.mostrarCanciones;
        }
 

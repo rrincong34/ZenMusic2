@@ -11,6 +11,10 @@ export class MenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+// usuarioActualizar = {nombre: 'Pepe', apellido: 'Pepito'}
+// this.usuarioActualizar = JSON.parse(localStorage.getItem('sesion'));
+// this.identidad = this.usuarioService.obtenerNombreUsuario();
+
   }
 
 }
