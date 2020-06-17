@@ -13,7 +13,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { RegistroCancionComponent } from './components/registro-cancion/registro-cancion.component';
 import { CancionTodasComponent } from './components/cancion-todas/cancion-todas.component';
 import { CancionComponent } from './components/cancion/cancion.component';
-
+import { ListaComponent } from './components/lista/lista.component';
 
 
 // Relacionar rutas con componentes
@@ -27,11 +27,8 @@ const routes: Routes = [
     {path: 'registro-cancion', component: RegistroCancionComponent },
     {path: '', component: HomeComponent},
     {path: 'cancion-todas', component: CancionTodasComponent},
-    {path: 'cancion', component: CancionComponent}
-
-
-
-    
+    {path: 'cancion', component: CancionComponent},
+    {path: 'lista', component: ListaComponent}
 
 ];
 

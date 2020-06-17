@@ -27,7 +27,7 @@ cancion = {
   alOido_Nombre: 'AL OIDO',
   anzar_Nombre: 'ANZAR',
   bajoTierra_Nombre: 'SUPER HOLGAZAN',
-  caballito_Nombre: 'SUPER HSEQ',
+  caballito_Nombre: 'CABALLITO DE RAQUIRA',
   cancionAgradecimiento_Nombre: 'SUPER HSEQ',
   dejateLlevar_Nombre: 'SUPER HOLGAZAN',
   feliz_Nombre: 'SUPER HSEQ',
@@ -45,7 +45,7 @@ album = {
   alOido_album: 'Al Oído The best of Mónica Giraldo',
   anzar_album: '',
   bajoTierra_album: 'SUPER HOLGAZAN',
-  caballito_album: 'SUPER HSEQ',
+  caballito_album: 'Music from Colombia',
   cancionAgradecimiento_album: 'SUPER HSEQ',
   dejateLlevar_album: 'SUPER HOLGAZAN',
   feliz_album: 'SUPER HSEQ',
@@ -82,7 +82,7 @@ artista = {
   alOido_artista: 'Mónica Giraldo',
   anzar_artista: 'Tusho Medina',
   bajoTierra_artista: 'SUPER HOLGAZAN',
-  caballito_artista: 'SUPER HSEQ',
+  caballito_artista: 'Niyireth Alarcon',
   cancionAgradecimiento_artista: 'SUPER HSEQ',
   dejateLlevar_artista: 'SUPER HOLGAZAN',
   feliz_artista: 'SUPER HSEQ',
@@ -100,7 +100,10 @@ año = {
   genero2: '2019',
   genero3: '2013',
   genero4: '',
-  genero5: ''
+  genero5: '2016',
+  genero6: '2014',
+  genero7: '2019',
+  genero8: '2013'
 }
 
 constructor() { }
