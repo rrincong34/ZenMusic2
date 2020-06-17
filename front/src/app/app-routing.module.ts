@@ -21,11 +21,12 @@ const routes: Routes = [
     {path: 'crear-play-list', component: CrearPlayListComponent},
     {path: 'menu-no-registrados', component: MenuNoRegistradosComponent},
     {path: 'menu', component: MenuComponent},
-    {path: 'registro-cancion', component: RegistroCancionComponent },
+    {path: 'registro-cancion',pathMatch: 'prefix', component: RegistroCancionComponent },
     {path: '', component: HomeComponent}
 
 
-    
+    //path:  'contacts',pathMatch: 'prefix', component:  ContactListComponent
+
 
 ];
 
