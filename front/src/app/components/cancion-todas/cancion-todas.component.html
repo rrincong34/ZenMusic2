@@ -1,6 +1,6 @@
-<div class="row">
+<div class="row" >
 <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
-    <img src="../../../assets/img/logo-solo.png" class="card-img-top" alt="...">
+    <img src="../../../assets/ImgCanciones/Caballito_de_raquira-niyireth.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">TU BOCA</h5>
     </div>
@@ -42,3 +42,11 @@
   </div>
 </div>
   
+
+
+
+
+<h2 class="car">{{ cancion.aguabajo_Nombre }}  </h2> 
+<div *ngFor="let img of aguabajo_img">
+    <img id="img" width="300" [src] = "img" />
+</div>
