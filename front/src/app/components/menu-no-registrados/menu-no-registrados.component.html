@@ -1,13 +1,14 @@
 <nav class="navbar navbar-dark bg-dark" id="navHorizontal">
     <a class="navbar-brand"> </a>
-    <div *ngFor="let img of imagen1"> <img id="img" width="60" [src] = "img" />   </div>
-    <div class="media-body"> <h4 id="tituloNav" class="m-0">ZEN MUSIC</h4> </div>
+    <!-- <div *ngFor="let img of imagen1"> <img id="img" width="150px" [src] = "img" />   </div> -->
+
+    <!-- <div class="media-body"> <h4 id="tituloNav" class="m-0">ZEN MUSIC</h4> </div> -->
     <form class="form-inline">
         <div class="nav-item">
-            <a class="nav-link" class="tituloNavHorizontal" href="#" target="blank_" tabindex="-1" aria-disabled="true">INICIAR SESION</a>
+            <a class="nav-link" class="tituloNavHorizontal" routerLink="/login" >INICIAR SESION</a>
         </div>
         <div class="nav-item">
-            <a class="nav-link" class="tituloNavHorizontal" href="#" target="blank_" tabindex="-1" aria-disabled="true">REGISTRARSE </a>
+            <a class="nav-link" class="tituloNavHorizontal" routerLink="/registro" >REGISTRARSE </a>
         </div>
       <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
       <button class="btn btn-outline-info my-2 my-sm-0 " type="submit">BUSCAR</button>
@@ -17,6 +18,92 @@
 
 
 
+
+  <!----------------------------------------- aca inicia el navbar Vertical  --------------------------------------->
+
+  <div class="vertical-nav bg-dark" id="sidebar" >
+    <div class="py-4 px-3 mb-4 bg-dark">
+      <div class="media d-flex align-items-center bg-dark">
+          <div *ngFor="let img of imagen1">
+              <img style="width: 240px;" id="img" width="100" [src] = "img" />
+          </div>
+      
+       <!-- <div class="media-body">
+          <h4 id="tituloNav" class="m-0">ZEN MUSIC</h4> 
+        </div> -->
+  
+      </div>
+    </div>
+  <br>
+    <!-- <p class="text-gray font-weight-bold text-uppercase px-3 medium  pb-4 mb-0">PLAY LIST</p>
+  
+    <ul class="nav flex-column bg-white mb-0">
+      <li class="nav-item">
+        <a routerLink="/crear-play-list" class="nav-link text-dark bg-dark">
+                  <i class="fa fa-caret-square-o-right mr-3 text-info fa-fw"></i>
+                  Crear Play list
+              </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/crear-play-list" class="nav-link text-dark bg-dark">
+                  <i class="fa fa-archive mr-3 text-info fa-fw"></i>
+                  Agregar canciones
+              </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/crear-play-list" class="nav-link text-dark bg-dark">
+                  <i class="fa fa-circle-o-notch mr-3 text-info fa-fw"></i>
+                  Eliminar canciones
+              </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/crear-play-list" class="nav-link text-dark bg-dark">
+                  <i class="fa fa-cubes mr-3 text-info fa-fw"></i>
+                  Ver Play list
+              </a>
+      </li>
+    </ul>
+  <hr>
+    <p class="text-gray font-weight-bold text-uppercase px-3 medium py-4 mb-0 bg-dark">MI PERFIL</p>
+  
+    <ul class="nav flex-column bg-white mb-0">
+      <li class="nav-item">
+        <a routerLink="/#" class="nav-link text-dark bg-dark">
+                  <i class="fa fa-address-card mr-3 text-info fa-fw"></i>
+                  Ver perfil
+              </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/perfil" class="nav-link text-dark bg-dark">
+                  <i class="fa fa-cogs mr-3 text-info fa-fw"></i>
+                  Editar perfil
+              </a>
+      </li>
+    </ul>
+    <br> -->
+  
+  
+  <!-- Cargar  la imagen del formulario perfil-->
+  
+    <!-- <img id="imgUsuario" src="{{ url + 'obtenerImagen/' + identidad.imagen }}"  style="height: 100px; border-radius: 40px; margin: auto;
+    display: block; " />   -->
+  
+  
+  
+    <!-- <div class="fotoUsuario">
+      <div class="media d-flex align-items-center">
+          <img id="foto" src="../../../assets/img/foto.png" alt="..." width="100" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+        </div>
+          <h4>Pepito perez</h4>
+      </div>
+  
+  </div> -->
+  
+  
+  <!-- End vertical navbar -->
+  
+  
+  
 
 
 

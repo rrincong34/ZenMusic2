@@ -26,10 +26,6 @@ export class LoginComponent implements OnInit {
   imagen5 = [ 'assets/img/logo.png'] ;
   imagen6 = [ 'assets/img/social/bg.jpg'] ;
 
-
-
-
-
   // Declarar la variable login de tipo Usuario
   public login : Usuario;
   // Declarar la variable identidad
@@ -45,6 +41,8 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  
+
   // -- Método loginUsuario que consumirá el servicio iniciarSesion --
   loginUsuario(){
     this.usuarioService.iniciarSesion(this.login).subscribe(
@@ -52,6 +50,8 @@ export class LoginComponent implements OnInit {
         // this.login = response.usuario
         let usuario = response.usuario;
         this.login = usuario;
+
+        
         if(this.login){
           let usuarioLogueado = new Usuario(
             this.login._id,
@@ -78,9 +78,9 @@ export class LoginComponent implements OnInit {
 
 
 
-
           // Redireccion al perfil
-          this._router.navigate(['/perfil']);
+          this._router.navigate(['/menu']);
+
         }else{
           // alert('Usuario no identificado');
 
