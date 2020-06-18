@@ -14,6 +14,7 @@ import { RegistroCancionComponent } from './components/registro-cancion/registro
 import { CancionTodasComponent } from './components/cancion-todas/cancion-todas.component';
 import { CancionComponent } from './components/cancion/cancion.component';
 import { ListaComponent } from './components/lista/lista.component';
+import { VistaReproduccionComponent } from './components/vista-reproduccion/vista-reproduccion.component';
 
 
 // Relacionar rutas con componentes
@@ -28,7 +29,8 @@ const routes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'cancion-todas', component: CancionTodasComponent},
     {path: 'cancion', component: CancionComponent},
-    {path: 'lista', component: ListaComponent}
+    {path: 'lista', component: ListaComponent},
+    {path: 'vista-reproduccion', component: VistaReproduccionComponent}
 
 ];
 

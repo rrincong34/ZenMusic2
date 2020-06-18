@@ -51,7 +51,7 @@ export class PerfilUsuarioComponent implements OnInit {
 
             Swal.fire({           
             icon: 'success',
-            title: `<h5> Tus datos han sido Actualizados correctamente !!</h5>`,         
+            title: `<h5> ¡Tus datos han sido Actualizados correctamente !!</h5>`,         
             timer: 11500
           });
 

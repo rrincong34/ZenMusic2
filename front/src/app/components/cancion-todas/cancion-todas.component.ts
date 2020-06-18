@@ -6,6 +6,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cancion-todas.component.css']
 })
 export class CancionTodasComponent implements OnInit {
+
+  reproducir(){
+    const audio = new Audio('assets/Aguabajo (Chirimoya) - Según la CNN.mp3');
+    new Audio('assets/Al Oído, The best of Monica Giraldo - La vida puede ser simple.mp3');
+    new Audio('assets/Anzar-Tusho Medina.mp3');
+
+
+
+
+
+
+
+
+
+
+
+
+
+    audio.play();
+  }
+
   imagen1 = [ 'assets/img/logo-solo.png'];
   aguabajo_img = [ 'assets/ImgCanciones/Segun_la_CNN-Chirimoya.jpg'];
   alOido_img = [ 'assets/ImgCanciones/oi.jpg'];

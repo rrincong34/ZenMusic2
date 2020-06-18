@@ -102,11 +102,23 @@
 
 <div id="contenedorGeneral">
 <div class="row" >
-<div class="col-4" class="card" id="cardCanciones"  style="width: 18rem;">
+<div class="col-4" class="card" id="cardCanciones"  style="width: 20rem;">
   <div *ngFor="let img of aguabajo_img">
-    <img id="img" width="300" [src] = "img" class="card-img-top"  />
+    <img id="img" width="300" [src] = "img" class="card-img-top"  /> <br><br>
+
+
+    <!------------------------ INICIA REPRODUCTOR  ------------------------>
+    <div id="rep">
+      <audio controls src='assets/Aguabajo (Chirimoya) - Según la CNN.mp3' type="audio/mp3">
+       <code> audio </code> element.
+       </audio>
+      </div>
+ <!------------------------ FINZALIZA REPRODUCTOR  ------------------------>
+
+
+
 </div>
-    <div class="card-body">
+    <div class="card-body" >
       <h5 class="card-title"> {{ cancion.aguabajo_Nombre }} </h5>
     </div>
     <ul class="list-group list-group-flush">
@@ -118,9 +130,18 @@
     </ul>
   </div>
 
-  <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+  <div class="col-4" class="card" id="cardCanciones" style="width: 20rem;">
     <div *ngFor="let img of alOido_img">
-      <img id="img" width="300" [src] = "img" class="card-img-top"  />
+      <img id="img" width="300" [src] = "img" class="card-img-top"  /> <br><br>
+<!------------------------ INICIA REPRODUCTOR  ------------------------>
+<div id="rep">
+  <audio controls src='assets/Al Oído, The best of Monica Giraldo - La vida puede ser simple.mp3' type="audio/mp3">
+   <code> audio </code> element.
+   </audio>
+  </div>
+<!------------------------ FINZALIZA REPRODUCTOR  ------------------------>
+
+
   </div>
       <div class="card-body">
         <h5 class="card-title"> {{ cancion.alOido_Nombre }} </h5>
@@ -134,9 +155,17 @@
       </ul>
     </div>
 
-    <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+    <div class="col-4" class="card" id="cardCanciones" style="width: 20rem;">
       <div *ngFor="let img of anzar_img">
-        <img id="img" width="300" [src] = "img" class="card-img-top"  />
+        <img id="img" width="300" [src] = "img" class="card-img-top"  /> <br><br>
+<!------------------------ INICIA REPRODUCTOR  ------------------------>
+<div id="rep">
+  <audio controls src='assets/Anzar-Tusho Medina.mp3' type="audio/mp3">
+   <code> audio </code> element.
+   </audio>
+  </div>
+<!------------------------ FINZALIZA REPRODUCTOR  ------------------------>
+
     </div>
         <div class="card-body">
           <h5 class="card-title"> {{ cancion.anzar_Nombre }} </h5>
@@ -155,7 +184,7 @@
 <!-- ------------------------ segunda linea de canciones  -------------------------->
 
 <div class="row" >
-  <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+  <div class="col-4" class="card" id="cardCanciones" style="width: 20rem;">
     <div *ngFor="let img of bajoTierra_img">
       <img id="img" width="300" [src] = "img" class="card-img-top"  />
   </div>
@@ -171,7 +200,7 @@
       </ul>
     </div>
   
-    <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+    <div class="col-4" class="card" id="cardCanciones" style="width: 20rem;">
       <div *ngFor="let img of caballito_img">
         <img id="img" width="300" [src] = "img" class="card-img-top"  />
     </div>
@@ -187,7 +216,7 @@
         </ul>
       </div>
   
-      <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+      <div class="col-4" class="card" id="cardCanciones" style="width: 20rem;">
         <div *ngFor="let img of cancionAgradecimiento_img">
           <img id="img" width="300" [src] = "img" class="card-img-top"  />
       </div>
@@ -207,7 +236,7 @@
   <!-- ------------------------ tercera linea de canciones  -------------------------->
 
 <div class="row" >
-  <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+  <div class="col-4" class="card" id="cardCanciones" style="width: 20rem;">
     <div *ngFor="let img of dejateLlevar_img">
       <img id="img" width="300" [src] = "img" class="card-img-top"  />
   </div>
@@ -223,7 +252,7 @@
       </ul>
     </div>
   
-    <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+    <div class="col-4" class="card" id="cardCanciones" style="width: 20rem;">
       <div *ngFor="let img of feliz_img">
         <img id="img" width="300" [src] = "img" class="card-img-top"  />
     </div>
@@ -239,7 +268,7 @@
         </ul>
       </div>
   
-      <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+      <div class="col-4" class="card" id="cardCanciones" style="width: 20rem;">
         <div *ngFor="let img of paQueTrabajar_img">
           <img id="img" width="300" [src] = "img" class="card-img-top"  />
       </div>
@@ -260,7 +289,7 @@
    <!-- ------------------------ cuarta linea de canciones  -------------------------->
 
 <div class="row" >
-  <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+  <div class="col-4" class="card" id="cardCanciones" style="width: 20rem;">
     <div *ngFor="let img of chocolate_img">
       <img id="img" width="300" [src] = "img" class="card-img-top"  />
   </div>
@@ -276,7 +305,7 @@
       </ul>
     </div>
   
-    <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+    <div class="col-4" class="card" id="cardCanciones" style="width: 20rem;">
       <div *ngFor="let img of remanso_img">
         <img id="img" width="300" [src] = "img" class="card-img-top"  />
     </div>
@@ -292,7 +321,7 @@
         </ul>
       </div>
   
-      <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+      <div class="col-4" class="card" id="cardCanciones" style="width: 20rem;">
         <div *ngFor="let img of solo_img">
           <img id="img" width="300" [src] = "img" class="card-img-top"  />
       </div>
@@ -312,7 +341,7 @@
    <!-- ------------------------ quinta linea de canciones  -------------------------->
 
 <div class="row" >
-  <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+  <div class="col-4" class="card" id="cardCanciones" style="width: 20rem;">
     <div *ngFor="let img of tuBoca_img">
       <img id="img" width="300" [src] = "img" class="card-img-top"  />
   </div>
@@ -328,7 +357,7 @@
       </ul>
     </div>
   
-    <div class="col-4" class="card" id="cardCanciones" style="width: 18rem;">
+    <div class="col-4" class="card" id="cardCanciones" style="width: 20rem;">
       <div *ngFor="let img of teInvito_img">
         <img id="img" width="300" [src] = "img" class="card-img-top"  />
     </div>

@@ -28,7 +28,7 @@ export class ListaComponent implements OnInit {
 
   public listaCanciones : Lista;
   public identidad;
-  public listasUsuario; 
+  public listasUsuario : any=[];
 
   constructor(
     private listaService : ListaService,
@@ -36,23 +36,23 @@ export class ListaComponent implements OnInit {
     private _router : Router  //ruta para el menu
   ) {
     this.listaCanciones = new Lista("", "","",[""]);
-    
-       //mostar lista cancciones
-    this.identidad = JSON.parse(localStorage.getItem('sesion'))
+  }
 
-    console.log(this.identidad)
-
+  mostrarListasUsuario(){
     this.listaService.obtenerListasUsuario(this.identidad._id).subscribe(
       (response : any)=>{
         this.listasUsuario = response.lista;
         console.log(this.listasUsuario);
       }
     )
-  
    }
 
   ngOnInit(): void {
+
+           //mostar lista cancciones
+           this.identidad = JSON.parse(localStorage.getItem('sesion'));
+           console.log(this.identidad);
+           this.mostrarListasUsuario();
   }
-  
 
 }
