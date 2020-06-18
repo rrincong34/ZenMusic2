@@ -1,0 +1,263 @@
+h1{
+    text-align: center;
+}
+  
+  .logo {
+  width: 300px;
+  text-align: center;
+  margin-top: -30px;
+  margin-left: 140px;
+  transition: top ease 3s;
+  
+  }
+  
+  
+  
+  input, button{
+    border:none;
+    outline: none;
+    background: none;
+  }
+  
+  .cont{
+      margin-left: 25%;
+      margin-top: 6%;
+    overflow: hidden;
+    position: relative;
+    width: 700px;
+    height: 800px;
+    background: #fff;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 30px;
+  }
+  
+  .form{
+    position: relative;
+    width: 640px;
+    height: 100%;
+    padding: 10px 30px;
+   
+  }
+  
+ 
+  
+  input{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(109, 93, 93, 0.4);
+    text-align: center;
+    font-family: 'Nunito', sans-serif; 
+  }
+  
+  button{
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+    height: 36px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .submit{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+  }
+  
+  
+  
+  
+  .submit:hover{
+    background: -webkit-linear-gradient(left, #b224ef, #7579ff);
+  }
+  
+  .forgot-pass{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0c0101;
+    cursor: pointer;
+  }
+  
+  
+  .forgot1 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #353232;
+    
+  }
+  
+  
+  
+  
+  .forgot-pass:hover{
+    color: red;
+  }
+  
+  .social-media{
+    width: 100%;
+    text-align: center;
+    margin-top: -20px;
+  }
+  
+  
+  .fa:hover {  transform: scale(1.1) }
+  
+  .fa1:hover {  transform: scale(1.1) }
+  
+  .fa2:hover {  transform: scale(1.1) }
+  
+  .fa3:hover {  transform: scale(1.1) }
+  
+  
+  
+  .social-media ul{
+    list-style: none;
+  }
+  
+  .social-media ul li{
+    display: inline-block;
+    cursor: pointer;
+    margin: 25px 15px;
+  }
+  
+  .social-media img{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .sub-cont{
+    overflow: hidden;
+    position: absolute;
+    left: 640px;
+    top: 0;
+    width: 900px;
+    height: 100%;
+    padding-left: 260px;
+    background: #fff;
+  
+  }
+  
+  
+  
+  .img{
+    overflow: hidden;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 100%;
+    padding-top: 360px;
+  }
+  
+  .img:before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 900px;
+    height: 100%;
+    /* <img id="foto" src="../../../assets/img/foto.png" alt="..." width="100" > */
+    /* background-image: url(./img/social/bg.jpg); */
+     background-image: url(../../../assets/img/social/bg.jpg); 
+    background-size: cover;
+  }
+  
+  
+  
+  .img:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+  }
+  
+  
+  
+  .img-text{
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    color: #fff;
+   
+  }
+  
+  .img-text h2{
+    margin-bottom: 10px;
+    font-weight: normal;
+  }
+  
+  .img-text p{
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  
+    
+  .img-btn{
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+    width: 150px;
+    height: 36px;
+    margin: 0 auto;
+    background: transparent;
+    color: rgb(238, 223, 18);
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .img-btn:after{
+    content: '';
+    z-index: -2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #fff;
+    border-radius: 30px;}
+   
+  
+  .img-btn:hover{
+  
+    font-size: 17px;
+  
+  }
+    
+  
+  
+  .img-btn span{
+    position: absolute;
+    left: 0;
+    top: 0;
+   
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   
+  }
+  
