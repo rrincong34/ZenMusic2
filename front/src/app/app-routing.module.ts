@@ -24,20 +24,11 @@ const routes: Routes = [
     {path: 'crear-play-list', component: CrearPlayListComponent},
     {path: 'menu-no-registrados', component: MenuNoRegistradosComponent},
     {path: 'menu', component: MenuComponent},
-<<<<<<< HEAD
-    {path: 'registro-cancion',pathMatch: 'prefix', component: RegistroCancionComponent },
-    {path: '', component: HomeComponent}
-
-
-    //path:  'contacts',pathMatch: 'prefix', component:  ContactListComponent
-
-=======
     {path: 'registro-cancion', component: RegistroCancionComponent },
     {path: '', component: HomeComponent},
     {path: 'cancion-todas', component: CancionTodasComponent},
     {path: 'cancion', component: CancionComponent},
     {path: 'lista', component: ListaComponent}
->>>>>>> 5cc28596d31e356fadb47248cb7c16a14a40818c
 
 ];
 

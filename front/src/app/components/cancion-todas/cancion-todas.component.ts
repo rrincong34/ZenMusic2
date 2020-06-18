@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cancion-todas.component.css']
 })
 export class CancionTodasComponent implements OnInit {
+  imagen1 = [ 'assets/img/logo-solo.png'];
   aguabajo_img = [ 'assets/ImgCanciones/Segun_la_CNN-Chirimoya.jpg'];
   alOido_img = [ 'assets/ImgCanciones/oi.jpg'];
   anzar_img = [ 'assets/ImgCanciones/anzar-Tusho.jpg'];

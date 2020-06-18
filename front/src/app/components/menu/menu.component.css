@@ -1,9 +1,4 @@
-
-
-
-
-
-  .text-gray {
+.text-gray {
     color: #aaa;
   }
 
@@ -68,4 +63,15 @@ hr{
 
 
 
+#boton{
+    text-align: center;
+    margin-left: 19%;
+    margin-top: 1%;
+    background-color: lightgray;
+    border-radius: 3px;
+    position: fixed;
+}
+
+  #activar ~ .desplegable {display: none;overflow: hidden;}
+#activar:checked ~ .desplegable {display: block;}
 
