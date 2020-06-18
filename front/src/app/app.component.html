@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- <app-menu></app-menu>  
 <router-outlet></router-outlet>
 <app-footer></app-footer> -->
@@ -44,3 +45,41 @@
   <!-- <app-cancion-todas></app-cancion-todas>   -->
   <!-- <app-menu></app-menu>  -->
 </div> 
+=======
+<div
+  *ngIf="
+    pagina === '' ||
+    pagina === '/' ||
+    pagina === null ||
+    pagina === undefined ||
+    pagina === '/registro' ||
+    pagina === '/login'
+  "
+>
+<p>entro en 1</p>
+  <router-outlet></router-outlet>
+</div>
+
+<div
+  *ngIf="
+    pagina === '/perfil-usuario' ||
+    pagina === '/registro-cancion' ||
+    pagina === '/cancion-todas' ||
+    pagina === '/cancion' ||
+    pagina === '/crear-playlist' ||
+    pagina === '/lista'
+  "
+>
+
+<p>entro en 2</p>
+  <div *ngIf="existe == 'SI'">
+    <app-menu></app-menu>
+  </div>
+  <div *ngIf="existe == 'NO'">
+<app-menu-no-registrados></app-menu-no-registrados>
+  </div>
+  <router-outlet></router-outlet>
+
+  <app-footer></app-footer>
+</div>
+>>>>>>> e5786f6a3245c5552f8957a83d0f88ea8080906c

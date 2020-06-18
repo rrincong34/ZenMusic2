@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import Swal from 'sweetalert2'
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +8,26 @@ import Swal from 'sweetalert2'
 })
 
 export class AppComponent implements OnInit {
-  constructor(){}
+  constructor(  ){
+   }
+
   public pagina;
+  public usuario;
+  public existe;
   
   ngOnInit(): void{
-    this.pagina = localStorage.getItem('pagina');
+    
+    this.pagina = window.location.pathname;
+    this.usuario = localStorage.getItem('sesion');
+    console.log(`path: ${this.pagina}`)
+
+    if(!this.usuario){
+      this.existe = 'NO';
+    } else{
+      this.existe = 'SI';
+    }
+
+    console.log(`existe usuario para path: ${this.existe}` );
   }
     title = 'font';  
   }
