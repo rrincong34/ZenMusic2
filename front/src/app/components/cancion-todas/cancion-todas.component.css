@@ -1,3 +1,8 @@
+#contenedorGeneral{
+    margin-left: 25%;
+    margin-top: -8%;
+}
+
 #cardCanciones{
     border-radius: 15px;
     padding: 10px;
@@ -6,12 +11,124 @@
     background-color: lightgray;
 }
 
-li{
-    background-color: lightgray;
+
+.list-group-item{
+    background-color: lightgray; 
 }
 
 
 #cardCanciones:hover{
    font-weight: bold;
 }
+
+
+
+
+/* CSS DEL NAV BAR  */
+
+.text-gray {
+    color: #aaa;
+  }
+
+
+#navHorizontal{
+width: 100%;
+margin-top: -2%;
+position: fixed;
+box-shadow: 3px 3px 10px lightgray;
+z-index: 20;
+}
+
+#tituloNav{
+    color: lightgrey;
+    text-align: center;
+}
+
+.tituloNavHorizontal{
+    font-weight: bolder;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.tituloNavHorizontal:hover{
+    color: rgb(45, 175, 230);
+    font-size: large;
+}
+
+.vertical-nav {
+    min-width: 17rem;
+    width: 17rem;
+    height: 300vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 21;
+    /* box-shadow: 3px 3px 10px lightgray; */
+    transition: all 0.4s;
+    }
+
+hr{
+    color: gray !important;
+    border: 1px solid;
+}
+
+  .nav-link{
+      color: white !important;
+      font-weight: bold;
+  }
+
+  .nav-link:hover{
+      color: lightgray !important;
+      font-size: large;
+  }
+
+  .fotoUsuario{
+      text-align: center;
+      color: gray;
+  }
+
+  #foto{
+      margin-left: 80px;
+  }
+
+
+
+/* #boton{
+    text-align: center;
+    margin-left: 19%;
+    margin-top: -1%;
+    background-color: lightgray;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 30;
+}
+
+  #activar ~ .desplegable {display: none;overflow: hidden;}
+#activar:checked ~ .desplegable {display: block;} */
+
+
+
+/* CSS DEL NAV FOOTER  */
+
+
+footer {
+    background: rgb(52, 58, 64);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.container-footer-all {
+    width: 100%;
+    width: 1000px;
+    margin: auto;
+}
+
+
+.ico {
+font-size: 20px;
+}
+
 

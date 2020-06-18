@@ -5,7 +5,19 @@
 
 <div *ngIf="pagina == '' || pagina == undefined " >   
     <!-- <app-home></app-home>    -->
-    <!-- <app-registro></app-registro>   -->
+
+    
+   <router-outlet></router-outlet>     
+
+</div> 
+
+
+
+
+<div *ngIf="pagina == 'menu' || pagina == undefined " >   
+    <!-- <app-home></app-home>    -->
+
+   <app-cancion-todas></app-cancion-todas>  
    <router-outlet></router-outlet>     
 
 </div> 
