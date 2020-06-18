@@ -7,6 +7,7 @@
 width: 100%;
 position: fixed;
 box-shadow: 3px 3px 10px lightgray;
+z-index: 45;
 }
 
 #tituloNav{
@@ -35,6 +36,7 @@ box-shadow: 3px 3px 10px lightgray;
     left: 0;
     /* box-shadow: 3px 3px 10px lightgray; */
     transition: all 0.4s;
+    z-index: 50;
     }
 
 hr{
