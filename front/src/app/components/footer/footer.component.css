@@ -1,32 +1,23 @@
+/* CSS DEL NAV FOOTER  */
+
+
 footer {
-    background: rgb(31, 30, 30);
+    background: rgb(52, 58, 64);
     color: white;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-
 }
 
-#foto{
-    height: 100px;
-}
 .container-footer-all {
     width: 100%;
     width: 1000px;
     margin: auto;
- 
 }
 
-.row img {
-    width: 80px;
-    height: 80px;
-}
 
 .ico {
-
 font-size: 20px;
-
-
 }
-  
+
 

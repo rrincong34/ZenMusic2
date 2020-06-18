@@ -5,10 +5,7 @@
 
 <div *ngIf="pagina == '' || pagina == undefined " >   
     <!-- <app-home></app-home>    -->
-
-    
    <router-outlet></router-outlet>     
-
 </div> 
 
 
@@ -16,10 +13,7 @@
 
 <div *ngIf="pagina == 'menu' || pagina == undefined " >   
     <!-- <app-home></app-home>    -->
-
-   <app-cancion-todas></app-cancion-todas>  
    <router-outlet></router-outlet>     
-
 </div> 
 
 
@@ -28,3 +22,18 @@
    <router-outlet></router-outlet>     
 
 </div>  -->
+
+
+<div *ngIf="pagina == 'menu-no-registrados' || pagina == undefined " >    
+   <router-outlet></router-outlet> 
+   <app-cancion-todas></app-cancion-todas>  
+   <app-footer></app-footer>
+   <!-- <app-menu></app-menu>   -->
+</div> 
+
+<!-- <div *ngIf="pagina == 'cancion-todas' || pagina == undefined " >    
+    <router-outlet></router-outlet> 
+    <app-cancion-todas></app-cancion-todas>  
+    <app-footer></app-footer>
+    <app-menu></app-menu> 
+ </div>  -->
