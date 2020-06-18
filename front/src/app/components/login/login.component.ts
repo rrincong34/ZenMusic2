@@ -79,7 +79,7 @@ export class LoginComponent implements OnInit {
 
 
           // Redireccion al perfil
-          this._router.navigate(['/menu']);
+          this._router.navigate(['/cancion-todas']);
 
         }else{
           // alert('Usuario no identificado');
