@@ -34,7 +34,7 @@ function registrarCancion(req, res) {
         });
       }
     }
-  });
+  })
 }
 
 // Función Login

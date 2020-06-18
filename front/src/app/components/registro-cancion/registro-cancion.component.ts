@@ -64,6 +64,7 @@ export class RegistroCancionComponent implements OnInit {
       (response: any) => {
         let canciones = response.cancion;
         this.cancionRegistrada = canciones;
+        console.log(`el mensaje de guardar canción es ${response.message}`);
         if (!this.cancionRegistrada._id) {
           Swal.fire({
             icon:'warning',
@@ -93,6 +94,7 @@ export class RegistroCancionComponent implements OnInit {
   this.cancionService.subirArchivo(this.archivoSubir, this.cancionRegistrada._id).subscribe(
     (result : any )=>{
       this.cancionRegistrada.archivo = result.archivo;
+      console.log(`el mensaje de guardar archivo es ${result.message}`);
     }
   );
 }
@@ -112,6 +114,7 @@ if(!this.archivoSubirImg){
   this.cancionService.subirArchivo(this.archivoSubirImg, this.cancionRegistrada._id).subscribe(
     (result : any )=>{
       this.cancionRegistrada.imagen = result.imagen;
+      console.log(`el mensaje de guardar imagen es ${result.message}`);
     }
   );
 }
