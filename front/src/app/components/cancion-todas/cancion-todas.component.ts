@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Cancion } from '../../modelo/cancion';
+import { CancionService } from '../../services/cancion.service';
+
 
 @Component({
   selector: 'app-cancion-todas',
@@ -7,22 +10,37 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CancionTodasComponent implements OnInit {
 
+  //Declaracion de variables cancion y canciones
+
+  public canciones: any=[];
+
+  constructor(
+    private cancionService : CancionService,
+  ) { }
+
+ngOnInit(): void {
+   this.cancionService.mostrarCanciones().subscribe(
+     (response : any)=>{
+       if(response.canciones){
+        this.canciones = response.canciones
+        console.log(`lista de canciones: ${JSON.stringify(this.canciones)}`)
+       }else{
+console.log('no hay canciones')
+       }
+     }, error =>{
+      if(error != null){
+        console.log(`Error: ${error}`);
+      } 
+    }
+    );
+}
+
+
+
   reproducir(){
-    const audio = new Audio('assets/Aguabajo (Chirimoya) - Según la CNN.mp3');
+    const audio = new Audio();
     new Audio('assets/Al Oído, The best of Monica Giraldo - La vida puede ser simple.mp3');
     new Audio('assets/Anzar-Tusho Medina.mp3');
-
-
-
-
-
-
-
-
-
-
-
-
 
     audio.play();
   }
@@ -132,8 +150,5 @@ anio = {
   anio2019: '2019'
 }
 
-constructor() { }
 
-ngOnInit(): void {
-}
 }

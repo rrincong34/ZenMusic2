@@ -26,7 +26,7 @@ export class CancionService {
 
     //localhost:3000/api/ -> spi.post('/' , TareasControl.crearTarea)
     return this._http
-      .post(this.url + '/registro-Cancion', params, options)
+      .post(this.url + 'registro-Cancion', params, options)
       .pipe(map((res) => res));
   }
 
@@ -59,7 +59,7 @@ export class CancionService {
 
   subirArchivo(file: File, idCancion) {
     let formData = new FormData();
-    formData.append('imagen',file);
+    formData.append('imagen', file);
     return this._http
       .put(this.url + 'subirArchivoCancion/' + idCancion, formData)
       .pipe(map((res) => res));
@@ -67,23 +67,27 @@ export class CancionService {
 
   subirArchivoImg(file: File, idCancion) {
     let formData = new FormData();
-    formData.append('imagen',file);
+    formData.append('imagen', file);
     return this._http
       .put(this.url + 'subirImagenCancion/' + idCancion, formData)
       .pipe(map((res) => res));
   }
 
-  mostrarImagenCancion(imageFile){
-
-return this._http
-.get(this.url + 'obtenerImagenCancion/' + imageFile)
-.pipe(map((res) => res));
+  mostrarImagenCancion(imageFile) {
+    return this._http
+      .get(this.url + 'obtenerImagenCancion/' + imageFile)
+      .pipe(map((res) => res));
   }
 
-  mostrarArchivoCancion(cancionFile){
+  mostrarArchivoCancion(cancionFile) {
     return this._http
-    .get(this.url + 'obtenerArchivoCancion/' + cancionFile)
-    .pipe(map((res) => res));
-      }
+      .get(this.url + 'obtenerArchivoCancion/' + cancionFile)
+      .pipe(map((res) => res));
+  }
 
+  mostrarCanciones() {
+    return this._http
+      .get(this.url + 'mostrarCanciones')
+      .pipe(map((res) => res));
+  }
 }
