@@ -8,14 +8,14 @@
     pagina === '/login'
   "
 >
-<p>entro en 1</p>
+<!-- <p>entro en 1</p> -->
   <router-outlet></router-outlet>
 </div>
 
 <div
   *ngIf="
     pagina === '/perfil-usuario' ||
-    pagina === '/registro-cancion' ||
+    pagina === '/registro-cancion' ||   
     pagina === '/cancion-todas' ||
     pagina === '/cancion' ||
     pagina === '/crear-playlist' ||
@@ -23,7 +23,7 @@
   "
 >
 
-<p>entro en 2</p>
+<!-- <p>entro en 2</p> -->
   <div *ngIf="existe == 'SI'">
     <app-menu></app-menu>
   </div>
