@@ -11,8 +11,7 @@ var api = express.Router();
 // protección de rutas en Angular -> guards
 
 // Ruta Registrar Usuario -> angular url http://localhost:3000/api/
-api.post('/registroCancion', CancionControl.registrarCancion);
-
+api.post('/registro-Cancion', CancionControl.registrarCancion);
 
 // Ruta Actualizar Cancion
 api.put('/actualizar-cancion/:id', CancionControl.actualizarCancion);
@@ -28,6 +27,9 @@ api.put('/subirArchivoCancion/:id', subirArchivoCancionDirectorio, CancionContro
 
 // Ruta mostrar Archivo Cancion
 api.get('/obtenerArchivoCancion/:cancionFile', CancionControl.mostrarArchivoCancion);
+
+//mostrar todas las canciones
+api.get('/mostrarCanciones', CancionControl.mostrarCanciones);
 
 // Exportar el módulo
 module.exports = api;

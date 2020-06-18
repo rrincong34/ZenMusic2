@@ -15,6 +15,8 @@ import { MenuComponent } from './components/menu/menu.component';
 
 // Importar Servicio Usuario
 import { UsuarioService } from './services/usuario.service';
+import { CancionService } from './services/cancion.service';
+import { ListaService } from './services/lista.service';
 import { FooterComponent } from './components/footer/footer.component';
 import { CrearPlayListComponent } from './components/crear-play-list/crear-play-list.component';
 import { MenuNoRegistradosComponent } from './components/menu-no-registrados/menu-no-registrados.component';
@@ -23,6 +25,8 @@ import { VistaReproduccionComponent } from './components/vista-reproduccion/vist
 import { CancionTodasComponent } from './components/cancion-todas/cancion-todas.component';
 import { CancionComponent } from './components/cancion/cancion.component';
 import { ListaComponent } from './components/lista/lista.component';
+import { RegistroCancionComponent } from './components/registro-cancion/registro-cancion.component';
+
 
 @NgModule({
   declarations: [
@@ -39,7 +43,8 @@ import { ListaComponent } from './components/lista/lista.component';
     CancionTodasComponent,
     CancionComponent,
     CancionTodasComponent,
-    ListaComponent
+    ListaComponent,
+    RegistroCancionComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +52,7 @@ import { ListaComponent } from './components/lista/lista.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [UsuarioService],
+  providers: [UsuarioService, CancionService, ListaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
