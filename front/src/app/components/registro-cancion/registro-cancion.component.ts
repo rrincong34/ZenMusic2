@@ -67,59 +67,65 @@ export class RegistroCancionComponent implements OnInit {
         console.log(`el mensaje de guardar canción es ${response.message}`);
         if (!this.cancionRegistrada._id) {
           Swal.fire({
-            icon:'warning',
+            icon: 'warning',
             title: '<h5>Error al guardar canción</h5>',
-            timer: 11500
+            timer: 11500,
           });
         } else {
           Swal.fire({
             icon: 'success',
-            title: '¡Canción agregada!, título' + this.cancionRegistrada.nombreCancion,
-           timer: 11500  
+            title:
+              '¡Canción agregada!, título' +
+              this.cancionRegistrada.nombreCancion,
+            timer: 11500,
           });
 
- // Validación y consumo del servicio de la carga de archivo
- if(!this.archivoSubir){     
-  Swal.fire({           
-    icon: 'warning',
-    title: `<h5> No hay ningún archivo de canción</h5>`,         
-    timer: 11500
-  });
-}else{
-  Swal.fire({           
-    icon: 'success',
-    title: `<h5> Tu archivo es ${this.archivoSubir.name}</h5>`,         
-    timer: 11500
-  });
-  this.cancionService.subirArchivo(this.archivoSubir, this.cancionRegistrada._id).subscribe(
-    (result : any )=>{
-      this.cancionRegistrada.archivo = result.archivo;
-      console.log(`el mensaje de guardar archivo es ${result.message}`);
-    }
-  );
-}
- // Validación y consumo del servicio de la carga de imagen
-if(!this.archivoSubirImg){     
-  Swal.fire({           
-    icon: 'warning',
-    title: `<h5> No hay ninguna imagen</h5>`,         
-    timer: 11500
-  });
-}else{
-  Swal.fire({           
-    icon: 'success',
-    title: `<h5> Tu imagen es ${this.archivoSubirImg.name}</h5>`,         
-    timer: 11500
-  });
-  this.cancionService.subirArchivo(this.archivoSubirImg, this.cancionRegistrada._id).subscribe(
-    (result : any )=>{
-      this.cancionRegistrada.imagen = result.imagen;
-      console.log(`el mensaje de guardar imagen es ${result.message}`);
-    }
-  );
-}
-// Cierre Validación
- this.mostrarCanciones;
+          // Validación y consumo del servicio de la carga de archivo
+          if (!this.archivoSubir) {
+            Swal.fire({
+              icon: 'warning',
+              title: `<h5> No hay ningún archivo de canción</h5>`,
+              timer: 11500,
+            });
+          } else {
+            Swal.fire({
+              icon: 'success',
+              title: `<h5> Tu archivo es ${this.archivoSubir.name}</h5>`,
+              timer: 11500,
+            });
+            this.cancionService
+              .subirArchivo(this.archivoSubir, this.cancionRegistrada._id)
+              .subscribe((result: any) => {
+                this.cancionRegistrada.archivo = result.archivo;
+                console.log(
+                  `el mensaje de guardar archivo es ${result.message}`
+                );
+              });
+          }
+          // Validación y consumo del servicio de la carga de imagen
+          if (!this.archivoSubirImg) {
+            Swal.fire({
+              icon: 'warning',
+              title: `<h5> No hay ninguna imagen</h5>`,
+              timer: 11500,
+            });
+          } else {
+            Swal.fire({
+              icon: 'success',
+              title: `<h5> Tu imagen es ${this.archivoSubirImg.name}</h5>`,
+              timer: 11500,
+            });
+            this.cancionService
+              .subirArchivo(this.archivoSubirImg, this.cancionRegistrada._id)
+              .subscribe((result: any) => {
+                this.cancionRegistrada.imagen = result.imagen;
+                console.log(
+                  `el mensaje de guardar imagen es ${result.message}`
+                );
+              });
+          }
+          // Cierre Validación
+          this.mostrarCanciones;
         }
       },
 
@@ -131,17 +137,18 @@ if(!this.archivoSubirImg){
       }
     );
   }
- 
+
   //Consumo servicio obtenerCanciones con el metodo mostrarCanciones()
   mostrarCanciones() {
     this.cancionService.obtenerCanciones().subscribe(
       (response: any) => {
         this.cancionesEncontradas = response.canciones;
         console.log('tarjooo canciones');
-         // document.getElementById('mostrarImagen').setAttribute('src', rutaImagen);
-         document.getElementById('canciones').innerHTML=this.cancionesEncontradas;
-         // Cierre mostrar imagen
-
+        // document.getElementById('mostrarImagen').setAttribute('src', rutaImagen);
+        document.getElementById(
+          'canciones'
+        ).innerHTML = this.cancionesEncontradas;
+        // Cierre mostrar imagen
       },
       (error) => {
         var errorMensaje = <any>error;
@@ -154,29 +161,32 @@ if(!this.archivoSubirImg){
 
   //Consumo servicio actualizarCancion con el metodo editarCancion()
   editarCancion(cancion) {
-    this.cancionService.actualizarCancion(cancion._id, cancion).subscribe(
-      (response: any) => {
+    this.cancionService
+      .actualizarCancion(cancion._id, cancion)
+      .subscribe((response: any) => {
         if (!response.cancion) {
           Swal.fire({
-            icon:'warning',
+            icon: 'warning',
             title: '<h5>Error al actualizar canción</h5>',
-            timer: 11500
+            timer: 11500,
           });
         } else {
           Swal.fire({
             icon: 'success',
-            title: '¡Canción actualizada!, título ' + this.cancionRegistrada.nombreCancion,
-           timer: 11500  
+            title:
+              '¡Canción actualizada!, título ' +
+              this.cancionRegistrada.nombreCancion,
+            timer: 11500,
           });
-      }
-      (error) => {
-        var errorMensaje = <any>error;
-        if (errorMensaje != null) {
-          console.log(error);
         }
-      }
-      }
-    )}
+        (error) => {
+          var errorMensaje = <any>error;
+          if (errorMensaje != null) {
+            console.log(error);
+          }
+        };
+      });
+  }
   //Consumo de servicio eliminar Tarea
   eliminarCancion(idcancion) {
     this.cancionService.eliminarCancion(idcancion).subscribe(
@@ -216,7 +226,7 @@ if(!this.archivoSubirImg){
     );
   } */
 
- /*  subirArchivoImg(idcancion) {
+  /*  subirArchivoImg(idcancion) {
     this.cancionService.SubirArchivoImg(idcancion).subscribe(
       (response: any) => {
         if (response.cancion) {
@@ -236,7 +246,4 @@ if(!this.archivoSubirImg){
   }
 
    */
-  
 }
-
-

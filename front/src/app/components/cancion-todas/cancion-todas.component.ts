@@ -35,8 +35,6 @@ console.log('no hay canciones')
     );
 }
 
-
-
   reproducir(){
     const audio = new Audio();
     new Audio('assets/Al Oído, The best of Monica Giraldo - La vida puede ser simple.mp3');
